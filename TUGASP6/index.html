@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TUGAS JavaScript</title>
+</head>
+<body>
+
+
+    <h2>Tugas JavaScript</h2>
+
+
+    <script>
+        let time = new Date();
+
+        const namaHari = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'];
+        const namaBulan = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
+
+        let tanggal = time.getDate();
+        let hari = namaHari[time.getDay()];
+        let bulan = namaBulan[time.getMonth()];
+        let tahun = time.getFullYear();
+
+        console.log(time.toString());
+        console.log('Hari ini adalah tanggal : ' + tanggal);
+        console.log('Hari ini adalah hari : ' + hari);
+        console.log('Hari ini adalah bulan : ' + bulan);
+        console.log('Hari ini adalah tahun : ' + tahun);
+    </script>
+</body>
+</html>
